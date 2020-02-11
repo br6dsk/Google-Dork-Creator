@@ -1,7 +1,7 @@
 import os
 os.system("cls||clear")
 banner = """
-        Dork4r dork creator [Dork4deiro.py]
+        Dork4ry dork creator [Dork4deiro.py]
         Coded for study by: xtd6
 
         Create dorks with this options
