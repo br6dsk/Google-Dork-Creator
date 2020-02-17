@@ -1,8 +1,8 @@
 import os
 os.system("cls||clear")
 banner = """
-        Dork4ry dork creator [Dork4deiro.py]
-        Coded for study by: brndsk
+        Dork4r dork creator [Dork4deiro.py]
+        Coded for study by: xtd6
 
         Create dorks with this options
 
@@ -26,6 +26,42 @@ dork = ""
 def func_banner():
         print(f"{banner}")
         print("[+] Include your search [+]")
+
+def func_wait():
+        if(dork==""):
+                print(" \n         ► Dork without data to search")
+                wait = input(' \n         ► Press [ENTER] to continue')
+def option_9():
+
+        if(option==9):
+                print(" \n         ► [WARNING] - [GOOGLER NOT WORKING CORRETLY]")
+                op = str(input(" \nDo you have Googler installed? Y/N: "))
+                op = op.capitalize()
+                if(op=='Y'):
+                        up = str(input(" \nUpdate Googler?: Y/N: "))
+                        up.capitalize()
+                        if(up=='y'):
+                                os.system("googler -u")
+                        elif(up=='n'):
+                                time.sleep(0.2)
+                                print(" \nStarting search...");
+                                search = f"googler {dork}"
+                                wait = input(' \n         ► [PRESS ENTER TO CONTINUE]')
+                                print(" \nMaybe your IP has been blocked by Google")
+                                os.system(search)         
+                elif(op=='N'):
+                        op = str(input(" \nWant to install?: Y/N: "))
+                        op = op.capitalize()
+                        if(op=='Y'):
+                                install = "sudo curl -o /usr/local/bin/googler https://raw.githubusercontent.com/jarun/googler/v2.9/googler && sudo chmod +x /usr/local/bin/googler"
+                                print(" \n         ► sudo curl -o /usr/local/bin/googler https://raw.githubusercontent.com/jarun/googler/v2.9/googler && sudo chmod +x /usr/local/bin/googler")
+                                wait = input(' \n         ► Press [ENTER] to continue and install')
+                                os.system(install)
+                               
+                        else:
+                                print(" \n         ► Exit")
+                                exit()
+
 while create == False:
 
         func_banner()
@@ -52,8 +88,8 @@ while create == False:
                 print(" \n ► Included")
                 time.sleep(0.5)
         elif(option==8):         
-                if(dork==None):
-                        print(" \n         ► Dork without data to search")
+                if(dork==""):
+                        func_wait()
                 else:
                         webbrowser.open(f"https://www.google.com/search?q={dork}")
         
@@ -87,34 +123,12 @@ while create == False:
         elif(option>10):
                 print(" \nWithout option")
                 time.sleep(1)
-                
-        elif(option==9):
-                op = str(input(" \nDo you have Googler installed? Y/N: "))
-                op = op.capitalize()
-                if(op=='Y'):
-                        up = str(input(" \nUpdate Googler?: Y/N: "))
-                        up.capitalize()
-                        if(up=='y'):
-                                os.system("googler -u")
-                        elif(up=='n'):
-                                time.sleep(0.2)
-                                print(" \nStarting search...");
-                                search = f"googler {dork}"
-                                print(" \nMaybe your IP has been blocked by Google")
-                                os.system(search)
-                        
-                elif(op=='N'):
-                        op = str(input(" \nWant to install?: Y/N: "))
-                        op = op.capitalize()
-                        if(op=='Y'):
-                                
-                                print(" \n         ► 10 seconds to copy code for install")
-                                print(" \n         ► sudo curl -o /usr/local/bin/googler https://raw.githubusercontent.com/jarun/googler/v2.9/googler && sudo chmod +x /usr/local/bin/googler")
-                                time.sleep(10)
-                        else:
-                                print(" \n         ► Exit")
-                                break   
 
+        elif(option==9):
+                if(dork==""):
+                        func_wait()
+                else:
+                        option_9()  
         os.system('cls||clear')
         if(option==7):
                 
@@ -129,19 +143,4 @@ while create == False:
                 print(" \n         ► Tank you for use!")
                 print(" \n         ► by xtd6\n")
                 break
-        
-                
-          
-
-
-                                
-                
-
-        
-
-
-
-
-
-        
-
+    
