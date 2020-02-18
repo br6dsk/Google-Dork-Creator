@@ -1,10 +1,20 @@
 import os
 os.system("cls||clear")
+img_banner = """ 
+██████╗  ██████╗ ██████╗ ██╗  ██╗██╗  ██╗██████╗ ██╗   ██╗
+██╔══██╗██╔═══██╗██╔══██╗██║ ██╔╝██║  ██║██╔══██╗╚██╗ ██╔╝
+██║  ██║██║   ██║██████╔╝█████╔╝ ███████║██████╔╝ ╚████╔╝ 
+██║  ██║██║   ██║██╔══██╗██╔═██╗ ╚════██║██╔══██╗  ╚██╔╝  
+██████╔╝╚██████╔╝██║  ██║██║  ██╗     ██║██║  ██║   ██║   
+╚═════╝  ╚═════╝ ╚═╝  ╚═╝╚═╝  ╚═╝     ╚═╝╚═╝  ╚═╝   ╚═╝   
+                        Github: https://github.com/brndsk/
+                        Coded 4study by: brndsk
+"""
 banner = """
-        Dork4r dork creator [Dork4deiro.py]
-        Coded for study by: xtd6
-
+        Dork4ry dork creator [Dork4deiro.py]
         Create dorks with this options
+        Github: https://github.com/brndsk/
+        Coded 4study by: brndsk
 
         1  ► Files
         2  ► Words
@@ -16,8 +26,7 @@ banner = """
         8  ► Search dork with browser
         9  ► Search dork with terminal (Linux)(slow)(Block IP)
         10 ► Clear dork
-        0  ► Exit
-
+        0  ► Exit        
 """
 import time 
 import webbrowser
@@ -61,9 +70,11 @@ def option_9():
                         else:
                                 print(" \n         ► Exit")
                                 exit()
-
+print(img_banner)
+time.sleep(2)
+os.system('cls||clear')
 while create == False:
-
+        
         func_banner()
         option = int(input(" \n[+] ► "))
         if(option==1):
@@ -73,6 +84,7 @@ while create == False:
                 time.sleep(1)
                 print(" \n ► Included")
                 time.sleep(0.5)
+
         elif(option==2):
                 options = "intext:"
                 menu = str(input(" \nWord: "))
@@ -141,6 +153,8 @@ while create == False:
         elif(option==0):
                 print(" \n         ► Exit")
                 print(" \n         ► Tank you for use!")
-                print(" \n         ► by xtd6\n")
-                break
-    
+                print(" \n         ► Github: https://github.com/brndsk/")
+                
+                exit()
+        
+     
