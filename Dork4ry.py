@@ -13,8 +13,8 @@ img_banner = """
 banner = """
         Dork4ry dork creator [Dork4deiro.py]
         Create dorks with this options
-        Github: https://github.com/brndsk/
-        Coded 4study by: brndsk
+        Github: https://github.com/br6dsk/
+        Coded 4study by: br6dsk
 
         1  ► Files
         2  ► Words
